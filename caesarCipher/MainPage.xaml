@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="caesarCipher.MainPage">
+
+    <StackLayout>
+        <Label Text="Caesar cipher" FontFamily="segoe ui"></Label>
+        <Label x:Name="labelError" Text="" TextColor="DarkRed"></Label>
+        <Entry x:Name="entryInput"></Entry>
+        <Button Text="Converter" Clicked="ButtonConverter_Clicked"></Button>
+        <Grid x:Name="gridMain">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
